@@ -106,23 +106,21 @@ nav a:last-child {
 }
 
 section {
-  height: auto;
-  padding: 20px;
   margin-bottom: 20px;
   background: gray;
 }
 
 article {
-  margin-top: 20px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  word-wrap: normal;
   line-height: 1.5em;
   color: #efefef;
 }
 
 form {
   margin: 10 0px;
-  padding: 20px 0px 10px 0px;
+  padding: 20px 20px 10px 20px;
 }
 
 footer {
@@ -139,6 +137,8 @@ input[type=text]{
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 input[type=text]:focus {
   box-shadow: inset 0px 0px 5px 5px rgba(0,0,0,0.2), 0px 0px 10px 0px rgba(0,0,0,0.19);
@@ -151,6 +151,8 @@ input[type=email]{
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 input[type=email]:focus {
@@ -165,6 +167,8 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 textarea:focus {
@@ -196,7 +200,6 @@ input[type=submit]:hover{
 }
 
 #logo {
-  width: 50%;
   max-width: 350px;
   min-width: 200px;
   float: left;
@@ -211,12 +214,13 @@ input[type=submit]:hover{
 }
 
 #page-title {
-  padding-bottom: 10px;
+  padding: 20px 0px 20px 0px;
+  margin: 0px 20px 0px 20px;
   border-bottom: 2px solid #efefef;
 }
 
 .bio {
-  padding: 10px 0px 10px 0px;
+  padding: 30px 20px 20px 20px;
 }
 
 .content {
@@ -232,7 +236,8 @@ input[type=submit]:hover{
 .portfolio {
   overflow: auto;
   display: block;
-  margin-left: 0px;
+  padding-top: 10px;
+  margin-left: 10px;
   margin-right: auto;
   width: 60%;
 }
