@@ -55,10 +55,35 @@ table {
 /*------------------------------My CSS starts here----------------------*/
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;*/
+
+/*----------------------Flexbox sticky footer styling-------------==*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+/*----------------------Flexbox sticky footer styling ends-------------==*/
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #efefef;
+  background-image: url('../images/basic-port-background.jpg');
 }
 
 header {
@@ -106,6 +131,7 @@ nav a:last-child {
 }
 
 section {
+  min-width: 960px;
   margin-bottom: 20px;
   background: gray;
 }
@@ -206,9 +232,14 @@ input[type=submit]:hover{
   padding-top: 15px;
 }
 
+.content {
+  max-width: 960px;
+  margin: auto;
+}
+
 .about-img {
   float: left;
-  width: 250px;
+  width:300px;
   padding-right: 30px;
   padding-bottom: 10px;
 }
@@ -220,12 +251,9 @@ input[type=submit]:hover{
 }
 
 .bio {
-  padding: 30px 20px 20px 20px;
-}
+  line-height: 2em;
+  padding: 40px 20px 40px 20px;
 
-.content {
-  max-width: 960px;
-  margin: auto;
 }
 
 .form-titles {
